@@ -3,6 +3,7 @@ local lines = {}
 local api = require('tabby.module.api')
 local highlight = require('tabby.module.highlight')
 local tabwins = require('tabby.feature.tabwins')
+local mode = require('tabby.feature.mode')
 
 ---TabbyLine gathering all you need in configure nvim lines
 ---@class TabbyLine
@@ -26,6 +27,7 @@ end
 ---@class TabbyLineOption
 ---@field tab_name? TabbyTabNameOption
 ---@field buf_name? TabbyBufNameOption
+---@field mode? TabbyModeOption
 
 ---get line object
 ---@param opt? TabbyLineOption
